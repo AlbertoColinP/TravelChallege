@@ -12,10 +12,18 @@ public class TestTravelocity extends BaseTest{
 	public void testMenu() {
 		TravelocityHomePage page=getHomePage();
 		
-		SecondPage second=page.inicio();
+		Page2 second=page.inicio();
 		
-//		Assert.assertEquals(second.getTextH1(), "        Start by choosing your hotel");s
+
+		Page3 p3=second.inicio();
 		
+		p3.inicio();
+		
+		Assert.assertEquals(second.getPartida(), "Las Vegas (LAS)");
+		Assert.assertEquals(second.getRegreso(), "Los Angeles, CA, United States (LAX)");
+		Assert.assertEquals(second.getPartidaFechaSt(), "04/01/2018");
+		Assert.assertEquals(second.getRegresoFechaSt(), "05/01/2018");
+		Assert.assertEquals(second.getResumeSt(), "1 Traveler, All Airlines, Economy / Coach");
 	}
 	
 	

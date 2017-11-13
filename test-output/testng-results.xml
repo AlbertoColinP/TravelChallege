@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="My test suite" duration-ms="17988" started-at="2017-11-13T03:56:20Z" finished-at="2017-11-13T03:56:38Z">
+  <suite name="My test suite" duration-ms="25599" started-at="2017-11-13T23:38:48Z" finished-at="2017-11-13T23:39:13Z">
     <groups>
     </groups>
-    <test name="my first test" duration-ms="17988" started-at="2017-11-13T03:56:20Z" finished-at="2017-11-13T03:56:38Z">
+    <test name="my first test" duration-ms="25599" started-at="2017-11-13T23:38:48Z" finished-at="2017-11-13T23:39:13Z">
       <class name="com.globantu.automation.jose_colin.TestTravelocity">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.globantu.automation.jose_colin.TestTravelocity@7823a2f9]" name="beforeSuite" is-config="true" duration-ms="7463" started-at="2017-11-12T21:56:20Z" finished-at="2017-11-12T21:56:27Z">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.globantu.automation.jose_colin.TestTravelocity@4cc0edeb]" name="beforeSuite" is-config="true" duration-ms="9670" started-at="2017-11-13T17:38:48Z" finished-at="2017-11-13T17:38:58Z">
           <params>
             <param index="0">
               <value>
@@ -18,37 +18,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="FAIL" signature="testMenu()[pri:0, instance:com.globantu.automation.jose_colin.TestTravelocity@7823a2f9]" name="testMenu" duration-ms="9835" started-at="2017-11-12T21:56:27Z" finished-at="2017-11-12T21:56:37Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="testMenu()[pri:0, instance:com.globantu.automation.jose_colin.TestTravelocity@4cc0edeb]" name="testMenu" duration-ms="15268" started-at="2017-11-13T17:38:58Z" finished-at="2017-11-13T17:39:13Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=61.0.3163.100)
-  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[unknown error: Element <button type="button" class="btn-secondary btn-action t-select-btn" data-test-id="select-button" data-bargain-fare="false" data-click-handler="select-flight,omnitureClickHandler" data-prevent-expand="true" data-omniture-rfrr="Select.Offer8.BestValue" data-trip-id="2018-04-01t06:30:00-07:00-coach-las-lax-ua-324;2018-05-01t22:40:00-07:00-coach-lax-las-aa-354;" data-offer-index="" data-has-fare="true" data-leg-indexes="4,5" data-superlatives="BV,ST" data-outbound-airlinecodes="UA" data-inbound-airlinecodes="" data-is-cached="false" data-result-token="v5-db0dd6c946551da7bb2edf8b255243a5" data-air-provider-id="2" data-flight-fare-type-code="P" data-flight-fare-type-value="1" data-is-split-ticket="true" data-discount="0" data-is-packageable="true" data-leg0-natural-key="633696b176c91264cbf6271d24915fc6">...</button> is not clickable at point (957, 573). Other element would receive the click: <div class="flex-area-primary">...</div>
+  (Session info: chrome=62.0.3202.89)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'ALBERTO-PC', ip: '192.168.0.10', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'
+System info: host: 'MX-IT00714', ip: '10.230.10.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\Users\Alberto\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 61.0.3163.100, webStorageEnabled: true}
-Session ID: 5ae0e49a97b68b4cc6ef226d823f8f38
-*** Element info: {Using=id, value=package-1-adults-hp-package}]]>
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\Users\JOSE~1.COL\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 62.0.3202.89, webStorageEnabled: true}
+Session ID: abb9c5b841079387b49c5059bf5ac343]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=61.0.3163.100)
-  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <button type="button" class="btn-secondary btn-action t-select-btn" data-test-id="select-button" data-bargain-fare="false" data-click-handler="select-flight,omnitureClickHandler" data-prevent-expand="true" data-omniture-rfrr="Select.Offer8.BestValue" data-trip-id="2018-04-01t06:30:00-07:00-coach-las-lax-ua-324;2018-05-01t22:40:00-07:00-coach-lax-las-aa-354;" data-offer-index="" data-has-fare="true" data-leg-indexes="4,5" data-superlatives="BV,ST" data-outbound-airlinecodes="UA" data-inbound-airlinecodes="" data-is-cached="false" data-result-token="v5-db0dd6c946551da7bb2edf8b255243a5" data-air-provider-id="2" data-flight-fare-type-code="P" data-flight-fare-type-value="1" data-is-split-ticket="true" data-discount="0" data-is-packageable="true" data-leg0-natural-key="633696b176c91264cbf6271d24915fc6">...</button> is not clickable at point (957, 573). Other element would receive the click: <div class="flex-area-primary">...</div>
+  (Session info: chrome=62.0.3202.89)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
-System info: host: 'ALBERTO-PC', ip: '192.168.0.10', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'
+System info: host: 'MX-IT00714', ip: '10.230.10.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\Users\Alberto\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 61.0.3163.100, webStorageEnabled: true}
-Session ID: 5ae0e49a97b68b4cc6ef226d823f8f38
-*** Element info: {Using=id, value=package-1-adults-hp-package}
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\Users\JOSE~1.COL\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 62.0.3202.89, webStorageEnabled: true}
+Session ID: abb9c5b841079387b49c5059bf5ac343
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -57,20 +53,20 @@ Session ID: 5ae0e49a97b68b4cc6ef226d823f8f38
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:416)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:44)
-	at com.globantu.automation.jose_colin.TravelocityHomePage.inicio(TravelocityHomePage.java:46)
-	at com.globantu.automation.jose_colin.TestTravelocity.testMenu(TestTravelocity.java:15)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.globantu.automation.jose_colin.Page2.inicio(Page2.java:62)
+	at com.globantu.automation.jose_colin.TestTravelocity.testMenu(TestTravelocity.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
@@ -94,11 +90,11 @@ Session ID: 5ae0e49a97b68b4cc6ef226d823f8f38
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMenu -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.globantu.automation.jose_colin.TestTravelocity@7823a2f9]" name="afterSuite" is-config="true" duration-ms="658" started-at="2017-11-12T21:56:37Z" finished-at="2017-11-12T21:56:38Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.globantu.automation.jose_colin.TestTravelocity@4cc0edeb]" name="afterSuite" is-config="true" duration-ms="646" started-at="2017-11-13T17:39:13Z" finished-at="2017-11-13T17:39:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
