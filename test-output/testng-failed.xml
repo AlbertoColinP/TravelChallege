@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [My test suite]">
+  <parameter name="browser" value="chrome"/>
+  <test name="my first test(failed)">
+    <classes>
+      <class name="com.globantu.automation.jose_colin.TestTravelocity">
+        <methods>
+          <include name="testMenu"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.globantu.automation.jose_colin.TestTravelocity -->
+    </classes>
+  </test> <!-- my first test(failed) -->
+</suite> <!-- Failed suite [My test suite] -->
