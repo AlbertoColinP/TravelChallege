@@ -17,13 +17,17 @@ public class TestTravelocity extends BaseTest{
 
 		Page3 p3=second.inicio();
 		
-		p3.inicio();
+		Page4 p4=p3.inicio();
+		
+		p4.inicio();
 		
 		Assert.assertEquals(second.getPartida(), "Las Vegas (LAS)");
 		Assert.assertEquals(second.getRegreso(), "Los Angeles, CA, United States (LAX)");
 		Assert.assertEquals(second.getPartidaFechaSt(), "04/01/2018");
 		Assert.assertEquals(second.getRegresoFechaSt(), "05/01/2018");
 		Assert.assertEquals(second.getResumeSt(), "1 Traveler, All Airlines, Economy / Coach");
+		
+		Assert.assertEquals(p4.getLugarPartidaString(), "Los Angeles Intl. (LAX)");
 	}
 	
 	

@@ -66,6 +66,8 @@ public class TravelocityHomePage extends BasePage {
 
 	public Page2 inicio() {
 
+	
+
 		getWait().until(ExpectedConditions.elementToBeClickable(flight));
 
 		flight.click();
@@ -111,7 +113,7 @@ public class TravelocityHomePage extends BasePage {
 		// Select adulto = new Select(comboAdulto);
 		// adulto.selectByValue("1");
 		//
-		
+
 		buscar.click();
 
 		return new Page2(getDriver());

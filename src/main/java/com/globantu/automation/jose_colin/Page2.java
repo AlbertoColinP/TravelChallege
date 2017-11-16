@@ -60,7 +60,12 @@ public class Page2 extends BasePage {
 		
 		getWait().until(ExpectedConditions.elementToBeClickable(selectFlight));
 		selectFlight.click();
-		
+		try {
+			Thread.sleep(6000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	
 		return new Page3(getDriver());
 	}
 

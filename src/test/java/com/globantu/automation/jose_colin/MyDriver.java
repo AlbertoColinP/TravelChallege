@@ -5,6 +5,9 @@ import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -25,11 +28,18 @@ public class MyDriver {
 			break;
 		case "firefox":
 			System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
-//			driver =new FirefoxDriver();
+			driver =new FirefoxDriver();
 			break;
 		case "chrome":
 			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-			driver =new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--start-maximized");
+			driver = new ChromeDriver(options);
+			
+			break;
+		case "explorer":
+			System.setProperty("webdriver.ie.driver", "src/main/resources/IEDriverServer.exe");
+			driver=new InternetExplorerDriver();
 			break;
 		default:
 			break;
