@@ -1,5 +1,9 @@
 package com.globantu.automation.jose_colin;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,15 +14,40 @@ public class Page4 extends BasePage{
 	@FindBy(id="forcedChoiceNoThanks")
 	private WebElement popup;
 	
-	@FindBy(xpath="/html/body/main/section[1]/div[2]/div[1]/div/div/div[1]/ol/li[2]/span[2]")
-	private WebElement lugarPartida;
+	private final String LUGARESXPATH="//ol[@class='odPair nobullet']//span[@class='airport type-300']";	
 	
-	private String lugarPartidaString;
+	private final String FECHASXPATH="//div[@class='flex-area-primary']//h3";	
+	
+	private final String BOTONESXPATH="//div[@class='farePrice']//form[@class='continueBookingForm']//button";
+	
+	@FindBy(xpath="//span[@class='packagePriceTotal']")
+	private WebElement precio;
+	
+	@FindBy(id="bookButton")
+	private WebElement buttonContinue;
+	
+	
+	private List<WebElement> fechas;
+	
+	private List<WebElement> lugares;
+	
+	private List<WebElement> botones;
+	
+	private List<String> fechasString=new ArrayList<>();
+	
+	private List<String> lugaresString=new ArrayList<>();
+	
+	
+	private String precioString;
+	
+	
+	
+	
 	public Page4(WebDriver driver) {
 		super(driver);
 	}
 	
-	public void inicio() {
+	public Page5 inicio() {
 		
 		try {
 			Thread.sleep(3000);
@@ -33,13 +62,44 @@ public class Page4 extends BasePage{
 //			popup.click();
 //		}
 //		
-		getWait().until(ExpectedConditions.visibilityOf(lugarPartida));
+		//getWait().until(ExpectedConditions.visibilityOf(lugarPartida));
 		
-		lugarPartidaString=lugarPartida.getText();
+		
+		
+		fechas=getDriver().findElements(By.xpath(FECHASXPATH));
+		
+		for (WebElement webElement : fechas) {
+			fechasString.add(webElement.getText());
+		}
+		
+		precioString=precio.getText();
+		
+		lugares=getDriver().findElements(By.xpath(LUGARESXPATH));
+		
+		for (WebElement webElement : lugares) {
+			lugaresString.add(webElement.getText());
+		}
+		
+		getWait().until(ExpectedConditions.elementToBeClickable(buttonContinue));
+		buttonContinue.click();
+//		botones=getDriver().findElements(By.xpath(BOTONESXPATH));
+//		
+//		System.out.println(botones.size());
+		
+		return new Page5(getDriver());
+		
+		
 	}
 	
-	public String getLugarPartidaString() {
-		return lugarPartidaString;
+	public List<String> getLugaresString() {
+		return lugaresString;
 	}
 	
+	public List<String> getFechasString() {
+		return fechasString;
+	}
+	
+	public String getPrecioString() {
+		return precioString;
+	}
 }

@@ -24,7 +24,7 @@ public class Page2 extends BasePage {
 	@FindBy(xpath = "//*[@class='secondary-playback-summary']")
 	private WebElement resume;
 	
-	@FindBy(xpath="//button[@data-leg0-natural-key='633696b176c91264cbf6271d24915fc6']")
+	@FindBy(xpath="//ul[@id='flightModuleList']//li[1]//button")
 	private WebElement selectFlight;
 
 	private String partida;

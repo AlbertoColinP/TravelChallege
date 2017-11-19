@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="My test suite" duration-ms="53485" started-at="2017-11-16T22:45:38Z" finished-at="2017-11-16T22:46:31Z">
+  <suite name="My test suite" duration-ms="64877" started-at="2017-11-19T05:50:43Z" finished-at="2017-11-19T05:51:48Z">
     <groups>
     </groups>
-    <test name="my first test" duration-ms="53485" started-at="2017-11-16T22:45:38Z" finished-at="2017-11-16T22:46:31Z">
+    <test name="my first test" duration-ms="64877" started-at="2017-11-19T05:50:43Z" finished-at="2017-11-19T05:51:48Z">
       <class name="com.globantu.automation.jose_colin.TestTravelocity">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.globantu.automation.jose_colin.TestTravelocity@4cc0edeb]" name="beforeSuite" is-config="true" duration-ms="10046" started-at="2017-11-16T16:45:38Z" finished-at="2017-11-16T16:45:48Z">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.globantu.automation.jose_colin.TestTravelocity@7823a2f9]" name="beforeSuite" is-config="true" duration-ms="12666" started-at="2017-11-18T23:50:43Z" finished-at="2017-11-18T23:50:55Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="testMenu()[pri:0, instance:com.globantu.automation.jose_colin.TestTravelocity@4cc0edeb]" name="testMenu" duration-ms="42590" started-at="2017-11-16T16:45:48Z" finished-at="2017-11-16T16:46:30Z">
+        <test-method status="PASS" signature="testMenu()[pri:0, instance:com.globantu.automation.jose_colin.TestTravelocity@7823a2f9]" name="testMenu" duration-ms="51364" started-at="2017-11-18T23:50:55Z" finished-at="2017-11-18T23:51:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMenu -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.globantu.automation.jose_colin.TestTravelocity@4cc0edeb]" name="afterSuite" is-config="true" duration-ms="836" started-at="2017-11-16T16:46:30Z" finished-at="2017-11-16T16:46:31Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.globantu.automation.jose_colin.TestTravelocity@7823a2f9]" name="afterSuite" is-config="true" duration-ms="827" started-at="2017-11-18T23:51:47Z" finished-at="2017-11-18T23:51:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
